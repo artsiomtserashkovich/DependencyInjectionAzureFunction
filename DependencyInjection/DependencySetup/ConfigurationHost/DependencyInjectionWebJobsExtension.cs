@@ -1,7 +1,7 @@
-﻿using Dependency_Injection.Injection;
+﻿using DependencyInjection.DependencySetup.Injection;
 using Microsoft.Azure.WebJobs;
 
-namespace Dependency_Injection.ConfigurationHost
+namespace DependencyInjection.DependencySetup.ConfigurationHost
 {
     public static class DependencyInjectionWebJobsBuilderExtensions
     {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace Dependency_Injection.Injection
+namespace DependencyInjection.DependencySetup.Injection
 {
     public interface IDependencyConfiguration
     {

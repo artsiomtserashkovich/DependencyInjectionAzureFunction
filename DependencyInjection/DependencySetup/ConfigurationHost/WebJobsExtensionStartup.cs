@@ -1,10 +1,10 @@
-﻿using Dependency_Injection.ConfigurationHost;
+﻿using DependencyInjection.DependencySetup.ConfigurationHost;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Hosting;
 
 [assembly: WebJobsStartup(typeof(WebJobsExtensionStartup), "Azure Function Extension")]
 
-namespace Dependency_Injection.ConfigurationHost
+namespace DependencyInjection.DependencySetup.ConfigurationHost
 {
     public class WebJobsExtensionStartup : IWebJobsStartup
     {

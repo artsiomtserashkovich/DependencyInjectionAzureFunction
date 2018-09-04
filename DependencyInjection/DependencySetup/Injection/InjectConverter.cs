@@ -1,8 +1,8 @@
-﻿using Dependency_Injection.Injection.Internal;
+﻿using DependencyInjection.DependencySetup.Injection.Internal;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Dependency_Injection.Injection
+namespace DependencyInjection.DependencySetup.Injection
 {
     public class InjectConverter<T> : IConverter<Anonymous, T>
     {

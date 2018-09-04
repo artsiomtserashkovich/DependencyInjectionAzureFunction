@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Azure.WebJobs.Description;
 
-namespace Dependency_Injection.Injection
+namespace DependencyInjection.DependencySetup.Injection
 {
     [AttributeUsage(AttributeTargets.Parameter)]
     [Binding]

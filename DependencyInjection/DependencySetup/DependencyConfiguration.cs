@@ -1,12 +1,14 @@
-﻿using Dependency_Injection.Injection;
+﻿using DependencyInjection.DependencySetup.Injection;
+using DependencyInjection.Sample.InjectService;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Dependency_Injection
+namespace DependencyInjection.DependencySetup
 {
     public class DependencyConfiguration : IDependencyConfiguration
     {
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<IInjectService, InjectService>();
         }
     }
 }
