@@ -5,10 +5,26 @@ Use [Inject] attribute to inject all your dependencies in Azure Function declara
 [FunctionName("Example")]
 public static IActionResult Run(
     [HttpTrigger("GET")] HttpRequest request,
-    [Inject] InjectService injectInstance)
+    [Inject] IInjectService injectInstance)
 {
     ...
 } 
 ```
 
-## 
+## Register your dependencies 
+
+For register your dependencies edit [DependencyConfiguration](https://github.com/ArtemTereshkovich/DependencyInjectionAzureFunction/blob/master/DependencyConfiguration.cs)
+
+``` cs
+namespace Dependency_Injection
+{
+    public class DependencyConfiguration : IDependencyConfiguration
+    {
+        public void ConfigureServices(IServiceCollection services)
+        {
+            //Register dependencies there : 
+            services.AddSingleton<IInjectService,InjectService>();
+        }
+    }
+}
+```
