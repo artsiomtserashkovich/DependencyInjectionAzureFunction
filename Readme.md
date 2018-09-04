@@ -13,7 +13,7 @@ public static IActionResult Run(
 
 ## Register your dependencies 
 
-For register your dependencies edit [DependencyConfiguration](https://github.com/ArtemTereshkovich/DependencyInjectionAzureFunction/blob/master/DependencyConfiguration.cs)
+For register your dependencies edit [DependencyConfiguration](https://github.com/ArtemTereshkovich/DependencyInjectionAzureFunction/blob/master/DependencyInjection/DependencySetup/DependencyConfiguration.cs)
 
 ``` cs
 namespace Dependency_Injection
