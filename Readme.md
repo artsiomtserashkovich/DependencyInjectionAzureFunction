@@ -1,3 +1,6 @@
+# Deprecated
+Microsoft provide own DI : https://docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-dependency-injection
+
 ## Dependency Injection based on [Indigo.Functions](https://github.com/daulet/Indigo.Functions) and [ielcoro's issues answear](https://github.com/Azure/azure-webjobs-sdk/issues/1865#issuecomment-417958408) 
 Use [Inject] attribute to inject all your dependencies in Azure Function declaration.
 
